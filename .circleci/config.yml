@@ -40,7 +40,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh root@39.105.202.51 "cd /var/www/circleci-demo-javascript-express & pwd & git pull"
+            ssh root@39.105.202.51 "cd /var/www/circleci-demo-javascript-express & pwd & touch hello.txt"
 
 workflows:
   version: 2
